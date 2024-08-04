@@ -23,4 +23,11 @@ from front import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('front.urls')),
+
+    path('auth/',include('users.urls')),
+
+
+    path('products/',include('products.urls')),
+
+    path('orders/',include('orders.urls')),
 ]
