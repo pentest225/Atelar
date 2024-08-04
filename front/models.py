@@ -46,6 +46,7 @@ class ContactInfo(models.Model):
 class BannerSection(models.Model):
     banner_image = models.FileField(upload_to="front_image/", max_length=100)
     banner_title = models.CharField(max_length=255)
+    banner_subtitle = models.CharField(max_length=255,null=True, blank=True)
     banner_description = models.CharField(max_length=255)
     banner_font_color = models.CharField(max_length=7)
     is_header_banner = models.BooleanField(default=False)
